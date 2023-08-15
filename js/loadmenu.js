@@ -10,7 +10,7 @@ class Menu extends HTMLElement{
             <a href="index.html">Home</a>
             <a href="">Skills</a>
             <a href="projects.html">Projects</a>
-            <a href="">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/andres-felipe-castro-2a628b165/">LinkedIn</a>
             </div>
         </div>
         `
