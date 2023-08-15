@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Nanum+Gothic:wght@400;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --paddingLeftRight: 5% ;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+}
+
+#menu {
+  width: 100%;
+  height: 90px;
+  background-color: #0081C9;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0px;
+}
+#menu div {
+  padding-left: var(--paddingLeftRight);
+  width: 70%;
+  height: 26px;
+}
+#menu a {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  margin-right: 50px;
+}
+
+#viwe1 {
+  width: 100%;
+  height: 100%;
+  padding: 8.12rem var(--paddingLeftRight);
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  grid-gap: 60px;
+  overflow-y: none;
+  background: rgb(134, 212, 255);
+  background: rgb(134, 212, 255);
+  background: linear-gradient(318deg, rgb(134, 212, 255) 0%, rgb(91, 192, 248) 67%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#86d4ff",endColorstr="#5bc0f8",GradientType=1);
+}
+#viwe1 h1 {
+  font-size: 90px;
+  color: white;
+}
+
+.webDeveloper-sh {
+  font-size: 50px;
+  color: #006BA7;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.home-description {
+  color: white;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 43px;
+}
+
+.home-left img {
+  width: 100%;
+  transform: rotate(10deg);
+  animation: floating 2s ease-in-out infinite; /* Adjust the animation duration as needed */
+}
+
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Adjust this value to control the floating motion */
+  }
+}
+/**********************************************  VIEW 2  *******************************************/
+#projects_page {
+  padding: 6.12rem 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(31, 31, 31);
+  overflow-x: hidden;
+}
+#projects_page h1 {
+  font-size: 90px;
+  color: white;
+  padding-left: var(--paddingLeftRight);
+  margin-bottom: 4rem;
+}
+#projects_page .color-line {
+  width: 100%;
+  height: 200px;
+}
+#projects_page .project {
+  position: relative;
+  height: 600px;
+  background-color: rgb(31, 31, 31);
+  margin-bottom: 150px;
+}
+#projects_page #project1 .color-line {
+  background-color: #5BC0F8;
+}
+#projects_page #project2 .color-line {
+  background-color: #EBAE11;
+}
+#projects_page #project3 .color-line {
+  background-color: #0081C9;
+}
+#projects_page #project4 .color-line {
+  background-color: #2CC5EF;
+}
+#projects_page .project-container {
+  display: flex;
+  margin: 20px var(--paddingLeftRight);
+  position: absolute;
+  top: 10%;
+}
+#projects_page .project-left img {
+  width: 85%;
+  display: block;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 10px 10px 14px -6px rgba(0, 0, 0, 0.4);
+}
+#projects_page .project-right {
+  width: 100%;
+  color: white;
+}
+#projects_page .project-right h2 {
+  font-size: 48px;
+  margin-bottom: 80px;
+}
+#projects_page .project-right p {
+  font-size: 25px;
+  line-height: 43px;
+}
+#projects_page .reverse {
+  flex-direction: row-reverse;
+}/*# sourceMappingURL=styles.css.map */

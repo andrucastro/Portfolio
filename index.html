@@ -4,92 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/scss/styles.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Document</title>
+    <title>Andres Castro</title>
 </head>
 <body>
-<header>
-    <div class="conatiner-presentation">
-        <div class="heading">
-            <h1 data-aos="slide-down" data-aos-duration="6000">Andres Castro</h1>
-            <P data-aos="fade-in" data-aos-duration="6000" data-aos-delay="700" class="sub-title">Web Developer</P>
-        </div>
-        <div class="container-desciption">
-            <div data-aos="fade-in" data-aos-duration="6000" data-aos-delay="1000"  class="profile-picture">
-                <div class="profile-picture-background"></div>
-                <img src="/img/IMG_0013.png" alt="">
-            </div>
-            <div data-aos="fade-in" data-aos-duration="7000" data-aos-delay="1000"  class="description-conatiner">
-                <p class="text-description">Front-End Web Developer passionate about creating exceptional user interfaces and efficient solutions. Proficient in HTML, CSS, JS, React, and Adobe Suite tools (AI, Ph, AF, Pr) and Figma for design.</p>
-            </div>
-        </div>
-    </div>
-</header>
+    <div id="viwe1">
+      <div class="home-right">
+        <h1 data-aos="fade-right">Andres Castro</h1>
+        <p data-aos="fade-right" data-aos-delay="200" class="webDeveloper-sh">Web Developer</p>
 
-<div data-aos="zoom-in-up" class="skills-container">
-    <h2 data-aos="fade-in" >Skills</h2>
-    <div class="slide-Container"> 
-        <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
-            <img class="image" src="/img/skills/react.png" draggable="false" />
-            <img class="image" src="/img/skills/node.png" draggable="false" />
-            <img class="image" src="/img/skills/html.png" draggable="false" />
-            <img class="image" src="/img/skills/css.png" draggable="false" />
-            <img class="image" src="/img/skills/js.png" draggable="false" />
-            <img class="image" src="/img/skills/ae.png"draggable="false" />
-            <img class="image" src="/img/skills/ai.png" draggable="false" />
-            <img class="image" src="/img/skills/pa.png" draggable="false" />
-            <img class="image" src="/img/skills/pr.png" draggable="false" />
-        </div>
+        <p class="home-description" data-aos="fade-up" data-aos-delay="300">
+          Front-End Web Developer passionate about creating exceptional user interfaces and efficient solutions. Proficient in HTML, CSS, JS, React, and Adobe Suite tools (AI, Ph, AF, Pr) and Figma for design.
+        </p>
+      </div>
+      <div class="home-left" data-aos="zoom-in-down" data-aos-delay="400">
+        <img src="/img/My project.png" alt="">
+      </div>
     </div>
-</div>
-<section class="projects-section">
-    <h2 data-aos="fade-in" class="projects-heading" >Projects</h2>
-    <div class="pojects-conatiner">
-        <div class="project">
-            <img src="/img/carstro.png" alt="">
-            <div class="project-description">
-                <p>1st Place BPA Competition</p>
-            </div>
-        </div>
-        <div class="project">
-            <img src="/img/maclab.png" alt="">
-            <div class="project-description">
-                <p>BYUI Library Website</p>
-            </div>
-        </div>
-        <div class="project">
-            <img src="/img/Dynamo.png" alt="">
-            <div class="project-description">
-                <p>Social Sports App </p>
-            </div>
-        </div>
-        <div class="project">
-            <img src="/img/Hotelwebsite.png" alt="">
-            <div class="project-description">
-                <p>Hotels Website</p>
-            </div>
-        </div>
-        <div class="project" id="lastPicture">
-            <img src="/img/Weather website.png" alt="">
-            <div class="project-description">
-                <p>Weather Website</p>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="contact-info">
-    <h2>Contact Information</h2>
-    <div>
-        <a href=""><div class="linkedIn-link"> <img src="/img/174857.png" alt=""> LinkedIn</div></a>
-    </div>
-</section>
-<script src="/js/logic.js"></script>
+
+    <!-- render menu -->
+    <menu-nav></menu-nav>
+
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+<script src="/js/loadmenu.js"></script>
+<script src="/js/logic.js"></script>
 
+<script>
+  AOS.init({
+    duration: 1100
+  });
+</script>
 </body>
 
 </html>
