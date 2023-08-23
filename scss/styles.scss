@@ -9,13 +9,15 @@
 }
 
 :root {
-    --paddingLeftRight: 5%
+    --paddingLeftRight: 4%
   }
 
 
 
 h1{
     font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding-bottom: 90px ;
 }
 
 
@@ -49,7 +51,7 @@ h1{
     padding: 8.12rem var(--paddingLeftRight);
     display: grid;
     grid-template-columns: 60% 1fr;
-    grid-gap: 60px;
+    grid-gap: 80px;
     overflow-y: none;
     background: rgb(134,212,255);
     background: rgb(134,212,255);
@@ -100,6 +102,11 @@ h1{
 
   /**********************************************  VIEW 2  *******************************************/
 
+
+  /**********************/
+  //Desktop View
+
+
   #projects_page{
 
     padding: 6.12rem 0px;
@@ -109,7 +116,7 @@ h1{
     overflow-x: hidden;
 
     h1{
-        font-size: 90px;
+        font-size: 120px;
         color: white; 
         padding-left: var(--paddingLeftRight);
         margin-bottom: 4rem;
@@ -117,14 +124,14 @@ h1{
 
     .color-line{
         width: 100%;
-        height: 250px;
+        height: 40%;
     }
 
     .project{
         position: relative;
         height: 600px;
         background-color: rgb(31, 31, 31);
-        margin-bottom: 150px;
+        margin-bottom: 350px;
     }
 
     // Color lines project 
@@ -158,11 +165,12 @@ h1{
         margin: 20px var(--paddingLeftRight);
         position: absolute;
         top: 10%;
+        gap:4%;
     }
 
     .project-left{
         img{
-            width: 85%;
+            width: 100%;
             display: block;
             margin: auto;
             border-radius: 20px;
@@ -177,17 +185,99 @@ h1{
         color: white;
 
         h2{
-            font-size: 48px;
-            margin-bottom: 80px;
+            font-size: 70px;
+            margin-top: 0px;
+            margin-bottom: 120px;
         }
 
         p{
-            font-size: 25px;
-            line-height: 43px;
+            font-size: 35px;
+            line-height: 65px;
+
         }
     }
 
     .reverse{
         flex-direction: row-reverse;
+    }
+  }
+
+  /**********************/
+  //Laptop View 
+
+  @media screen and (max-width: 2000px) {
+
+
+    #projects_page{
+        h1{
+            font-size: 70px;
+            padding-bottom: 25px;
+        }
+
+        #project1{
+            .color-line{
+                background-color:#5BC0F8;
+                height: 30%;
+            }
+        }
+    
+        #project2{
+            .color-line{
+                background-color:#EBAE11;
+                
+            }
+        }
+    
+        #project3{
+            .color-line{
+                background-color:#0081C9;
+            }
+        }
+        #project4{
+            .color-line{
+                background-color:#2CC5EF;
+                height: 30%;
+            }
+        }
+
+        .project{
+            margin-bottom: 0px
+        }
+
+        .project-container{
+            top: 8%;
+        }
+
+        .project-left{
+
+            width: 100%;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .project-right{
+            h2{
+                font-size: 50px;
+                margin-bottom: 70px;
+            }
+    
+            p{
+                font-size: 20px;
+                line-height: 40px;
+    
+            }
+        }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+
+    #projects_page{
+        
+        .project-container{
+            display: inline-block;
+        }
     }
   }
