@@ -8,11 +8,13 @@
 }
 
 :root {
-  --paddingLeftRight: 5% ;
+  --paddingLeftRight: 4% ;
 }
 
 h1 {
   font-family: "Open Sans", sans-serif;
+  text-align: center;
+  padding-bottom: 90px;
 }
 
 #menu {
@@ -42,7 +44,7 @@ h1 {
   padding: 8.12rem var(--paddingLeftRight);
   display: grid;
   grid-template-columns: 60% 1fr;
-  grid-gap: 60px;
+  grid-gap: 80px;
   overflow-y: none;
   background: rgb(134, 212, 255);
   background: rgb(134, 212, 255);
@@ -83,6 +85,7 @@ h1 {
   }
 }
 /**********************************************  VIEW 2  *******************************************/
+/**********************/
 #projects_page {
   padding: 6.12rem 0px;
   width: 100%;
@@ -91,20 +94,20 @@ h1 {
   overflow-x: hidden;
 }
 #projects_page h1 {
-  font-size: 90px;
+  font-size: 120px;
   color: white;
   padding-left: var(--paddingLeftRight);
   margin-bottom: 4rem;
 }
 #projects_page .color-line {
   width: 100%;
-  height: 250px;
+  height: 40%;
 }
 #projects_page .project {
   position: relative;
   height: 600px;
   background-color: rgb(31, 31, 31);
-  margin-bottom: 150px;
+  margin-bottom: 350px;
 }
 #projects_page #project1 .color-line {
   background-color: #5BC0F8;
@@ -123,9 +126,10 @@ h1 {
   margin: 20px var(--paddingLeftRight);
   position: absolute;
   top: 10%;
+  gap: 4%;
 }
 #projects_page .project-left img {
-  width: 85%;
+  width: 100%;
   display: block;
   margin: auto;
   border-radius: 20px;
@@ -136,13 +140,61 @@ h1 {
   color: white;
 }
 #projects_page .project-right h2 {
-  font-size: 48px;
-  margin-bottom: 80px;
+  font-size: 70px;
+  margin-top: 0px;
+  margin-bottom: 120px;
 }
 #projects_page .project-right p {
-  font-size: 25px;
-  line-height: 43px;
+  font-size: 35px;
+  line-height: 65px;
 }
 #projects_page .reverse {
   flex-direction: row-reverse;
+}
+
+/**********************/
+@media screen and (max-width: 2000px) {
+  #projects_page h1 {
+    font-size: 70px;
+    padding-bottom: 25px;
+  }
+  #projects_page #project1 .color-line {
+    background-color: #5BC0F8;
+    height: 30%;
+  }
+  #projects_page #project2 .color-line {
+    background-color: #EBAE11;
+  }
+  #projects_page #project3 .color-line {
+    background-color: #0081C9;
+  }
+  #projects_page #project4 .color-line {
+    background-color: #2CC5EF;
+    height: 30%;
+  }
+  #projects_page .project {
+    margin-bottom: 0px;
+  }
+  #projects_page .project-container {
+    top: 8%;
+  }
+  #projects_page .project-left {
+    width: 100%;
+  }
+  #projects_page .project-left img {
+    width: 100%;
+  }
+  #projects_page .project-right h2 {
+    font-size: 50px;
+    margin-bottom: 70px;
+  }
+  #projects_page .project-right p {
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #projects_page .project-container {
+    display: inline-block;
+  }
 }/*# sourceMappingURL=styles.css.map */
