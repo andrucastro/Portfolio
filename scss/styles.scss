@@ -13,11 +13,17 @@
   }
 
 
+body{
+    background: rgb(2,180,231);
+    background: -moz-linear-gradient(106deg, rgba(2,180,231,1) 0%, rgba(35,170,246,1) 100%);
+    background: -webkit-linear-gradient(106deg, rgba(2,180,231,1) 0%, rgba(35,170,246,1) 100%);
+    background: linear-gradient(106deg, rgba(2,180,231,1) 0%, rgba(35,170,246,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#02b4e7",endColorstr="#23aaf6",GradientType=1);
+}
+
 
 h1{
     font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    padding-bottom: 90px ;
 }
 
 
@@ -45,7 +51,7 @@ h1{
     } 
 }
 
-#viwe1{
+#view1{
     width: 100%;
     height: 100%;
     padding: 8.12rem var(--paddingLeftRight);
@@ -53,12 +59,7 @@ h1{
     grid-template-columns: 60% 1fr;
     grid-gap: 80px;
     overflow-y: none;
-    background: rgb(134,212,255);
-    background: rgb(134,212,255);
-    background: -moz-linear-gradient(318deg, rgba(134,212,255,1) 0%, rgba(91,192,248,1) 67%);
-    background: -webkit-linear-gradient(318deg, rgba(134,212,255,1) 0%, rgba(91,192,248,1) 67%);
-    background: linear-gradient(318deg, rgba(134,212,255,1) 0%, rgba(91,192,248,1) 67%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#86d4ff",endColorstr="#5bc0f8",GradientType=1);
+    background-color: transparent;
 
     h1{
         font-size: 90px;
@@ -83,7 +84,7 @@ h1{
 .home-left{
 
     img{
-        width: 100%;
+        width: 90%;
         transform: rotate(10deg);
         animation: floating 2s ease-in-out infinite; /* Adjust the animation duration as needed */
     }
@@ -280,4 +281,60 @@ h1{
             display: inline-block;
         }
     }
+  }
+
+
+
+  // Mobile *****************************************************************************
+
+  @media screen and (max-width: 850px) {
+
+
+// HOME
+
+
+        #menu{
+            position: absolute;
+            width: 100%;
+            top: 0;
+            height: 70px;
+
+            div{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                a{
+                    margin: 0px;
+                    font-size: 15px;
+                }
+            }
+          
+        }
+
+        #view1{
+            display: grid;
+            grid-template-columns:1fr;
+
+            h1{
+                font-size: 50px;
+                padding-bottom: 0px;
+            }
+
+            p{
+                text-align: center;
+                margin-bottom: 10px;
+            }
+        }
+        
+
+        .home-left{
+            img{
+                width: 70%;
+                display: block;
+                margin: 0px auto;
+            }
+        }
+
+
   }
