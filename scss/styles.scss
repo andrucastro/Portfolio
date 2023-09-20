@@ -38,7 +38,7 @@ h1{
     bottom: 0px;
     
     div{
-        padding-left: var(--paddingLeftRight);
+        padding: 0px 40px;
         width: 70%;
         height: 26px;
     }
@@ -47,7 +47,7 @@ h1{
         color: white;
         font-size: 25px;
         font-weight: 600;
-        margin-right: 50px;
+        margin-right: 60px;
     } 
 }
 
@@ -69,13 +69,13 @@ h1{
 
 .webDeveloper-sh{   
     font-size: 50px; 
-    color: #006BA7;
+    color: #38618C;
     font-weight: 400;
     margin-bottom: 60px;
 }
 
 .home-description{
-    color: white;
+    color: #FFFFFF;
     font-weight: 500;
     font-size: 25px;
     line-height: 43px;
@@ -145,6 +145,7 @@ h1{
     #project2{
         .color-line{
             background-color:#EBAE11;
+            height: 30%;
         }
     }
 
@@ -276,7 +277,12 @@ h1{
   @media screen and (max-width: 1200px) {
 
     #projects_page{
-        
+
+        h1{
+            text-align: center;
+            margin-top: 50px;
+            padding: 0px;
+        }
         .project-container{
             display: inline-block;
         }
@@ -289,6 +295,9 @@ h1{
 
   @media screen and (max-width: 850px) {
 
+:root {
+    --paddingLeftRight: 8%
+    }  
 
 // HOME
 
@@ -306,7 +315,8 @@ h1{
 
                 a{
                     margin: 0px;
-                    font-size: 15px;
+                    font-size: 20px;
+                    margin: 0;
                 }
             }
           
@@ -315,15 +325,24 @@ h1{
         #view1{
             display: grid;
             grid-template-columns:1fr;
+            padding: 7.12rem var(--paddingLeftRight);
+            grid-gap: 50px;
 
             h1{
-                font-size: 50px;
+                font-size: 40px;
                 padding-bottom: 0px;
+                text-align: center;
+            }
+
+            .webDeveloper-sh{
+                text-align: center;
+                font-size: 35px;
+                margin-bottom: 25px;
             }
 
             p{
+                font-size: 22px;
                 text-align: center;
-                margin-bottom: 10px;
             }
         }
         
@@ -337,4 +356,63 @@ h1{
         }
 
 
+
+    // Projects 
+    #projects_page{
+
+        h1{
+            text-align: center; 
+            padding: 0px;
+        }
+
+        h2{
+            margin-top: 50px !important;
+            margin-bottom: 20px !important;
+        }
+   
+        .project{
+            width: 100%;
+            height: 800px;
+        }
+
+        .project-container{
+            display: flex;
+            flex-direction: column;
+        }
+
+        #project1{
+            .color-line{
+                background-color:#5BC0F8;
+                height: 30%;
+                margin-top: 80px;
+            }
+        }
+    
+        #project2{
+            .color-line{
+                margin-top: 80px;
+                height: 30%;
+                
+            }
+        }
+    
+        #project3{
+            .color-line{
+                margin-top: 80px;
+                height: 30%;
+            }
+        }
+        #project4{
+            .color-line{
+                margin-top: 80px;
+                height: 30%;
+            }
+        }
+
+        .project-container{
+            top: 0;
+        }
+    }
   }
+
+
