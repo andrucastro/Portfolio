@@ -113,7 +113,11 @@ h1{
     padding: 6.12rem 0px;
     width: 100%;
     height: 100%;
-    background-color: rgb(31, 31, 31);
+    background: rgb(45,54,60);
+    background: -moz-linear-gradient(106deg, rgba(45,54,60,1) 0%, rgba(12,22,38,1) 100%);
+    background: -webkit-linear-gradient(106deg, rgba(45,54,60,1) 0%, rgba(12,22,38,1) 100%);
+    background: linear-gradient(106deg, rgba(45,54,60,1) 0%, rgba(12,22,38,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2d363c",endColorstr="#0c1626",GradientType=1);    
     overflow-x: hidden;
 
     h1{
@@ -131,8 +135,20 @@ h1{
     .project{
         position: relative;
         height: 600px;
-        background-color: rgb(31, 31, 31);
+        background: rgb(45,54,60);
+        background: -moz-linear-gradient(106deg, rgba(45,54,60,1) 0%, rgba(12,22,38,1) 100%);
+        background: -webkit-linear-gradient(106deg, rgba(45,54,60,1) 0%, rgba(12,22,38,1) 100%);
+        background: linear-gradient(106deg, rgba(45,54,60,1) 0%, rgba(12,22,38,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2d363c",endColorstr="#0c1626",GradientType=1);
         margin-bottom: 350px;
+
+        img{
+            cursor: pointer;
+            transition: transform 0.5s ease;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
     }
 
     // Color lines project 
@@ -145,7 +161,7 @@ h1{
     #project2{
         .color-line{
             background-color:#EBAE11;
-            height: 30%;
+
         }
     }
 
@@ -226,6 +242,7 @@ h1{
         #project2{
             .color-line{
                 background-color:#EBAE11;
+               
                 
             }
         }
@@ -357,7 +374,7 @@ h1{
 
 
 
-    // Projects 
+    // Projects -- 
     #projects_page{
 
         h1{
@@ -372,7 +389,7 @@ h1{
    
         .project{
             width: 100%;
-            height: 800px;
+            height: 850px;
         }
 
         .project-container{
@@ -416,3 +433,50 @@ h1{
   }
 
 
+  @media screen and (max-width: 500px) {
+    #projects_page{
+        h1{
+            font-size:50px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        h2{
+            margin-top: 45px !important;
+            font-size: 30px !important;
+            text-align: center;
+        }
+
+
+        .project-container{
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-bottom: 50px;
+        }
+
+        .color-line{
+            margin-top: 0px !important;
+            position: absolute !important;
+            height: 15% !important;
+            top: 28% !important;
+        }
+
+        .project-left{
+            img{
+               border-radius: 0px;
+            }
+        }
+
+        .project-right{
+            p{
+                padding: 20px !important;
+                font-size: 18px;
+            }
+        }
+  }
+
+  .temple{
+    padding-top: 25px;
+  }
+
+}

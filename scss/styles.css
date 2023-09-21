@@ -91,7 +91,9 @@ h1 {
   padding: 6.12rem 0px;
   width: 100%;
   height: 100%;
-  background-color: rgb(31, 31, 31);
+  background: rgb(45, 54, 60);
+  background: linear-gradient(106deg, rgb(45, 54, 60) 0%, rgb(12, 22, 38) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2d363c",endColorstr="#0c1626",GradientType=1);
   overflow-x: hidden;
 }
 #projects_page h1 {
@@ -107,15 +109,23 @@ h1 {
 #projects_page .project {
   position: relative;
   height: 600px;
-  background-color: rgb(31, 31, 31);
+  background: rgb(45, 54, 60);
+  background: linear-gradient(106deg, rgb(45, 54, 60) 0%, rgb(12, 22, 38) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2d363c",endColorstr="#0c1626",GradientType=1);
   margin-bottom: 350px;
+}
+#projects_page .project img {
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+#projects_page .project img:hover {
+  transform: scale(1.1);
 }
 #projects_page #project1 .color-line {
   background-color: #5BC0F8;
 }
 #projects_page #project2 .color-line {
   background-color: #EBAE11;
-  height: 30%;
 }
 #projects_page #project3 .color-line {
   background-color: #0081C9;
@@ -260,7 +270,7 @@ h1 {
   }
   #projects_page .project {
     width: 100%;
-    height: 800px;
+    height: 850px;
   }
   #projects_page .project-container {
     display: flex;
@@ -285,5 +295,38 @@ h1 {
   }
   #projects_page .project-container {
     top: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  #projects_page h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #projects_page h2 {
+    margin-top: 45px !important;
+    font-size: 30px !important;
+    text-align: center;
+  }
+  #projects_page .project-container {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+  }
+  #projects_page .color-line {
+    margin-top: 0px !important;
+    position: absolute !important;
+    height: 15% !important;
+    top: 28% !important;
+  }
+  #projects_page .project-left img {
+    border-radius: 0px;
+  }
+  #projects_page .project-right p {
+    padding: 20px !important;
+    font-size: 18px;
+  }
+  .temple {
+    padding-top: 25px;
   }
 }/*# sourceMappingURL=styles.css.map */
