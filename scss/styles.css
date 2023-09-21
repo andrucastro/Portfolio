@@ -11,10 +11,16 @@
   --paddingLeftRight: 4% ;
 }
 
-body {
+#home {
   background: rgb(2, 180, 231);
   background: linear-gradient(106deg, rgb(2, 180, 231) 0%, rgb(35, 170, 246) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#02b4e7",endColorstr="#23aaf6",GradientType=1);
+}
+
+#projects {
+  background: rgb(45, 54, 60);
+  background: linear-gradient(106deg, rgb(45, 54, 60) 0%, rgb(12, 22, 38) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2d363c",endColorstr="#0c1626",GradientType=1);
 }
 
 h1 {
@@ -91,9 +97,7 @@ h1 {
   padding: 6.12rem 0px;
   width: 100%;
   height: 100%;
-  background: rgb(45, 54, 60);
-  background: linear-gradient(106deg, rgb(45, 54, 60) 0%, rgb(12, 22, 38) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2d363c",endColorstr="#0c1626",GradientType=1);
+  background-color: transparent;
   overflow-x: hidden;
 }
 #projects_page h1 {
@@ -109,9 +113,6 @@ h1 {
 #projects_page .project {
   position: relative;
   height: 600px;
-  background: rgb(45, 54, 60);
-  background: linear-gradient(106deg, rgb(45, 54, 60) 0%, rgb(12, 22, 38) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2d363c",endColorstr="#0c1626",GradientType=1);
   margin-bottom: 350px;
 }
 #projects_page .project img {
